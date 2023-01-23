@@ -30,6 +30,10 @@
 // You can play a double or a triple letter.
 // You can play a double or a triple word.
 
+//Concurrency Scrabble Words
+
+// go letterValue("ultra kjq")
+
 package main
 
 import "strings"

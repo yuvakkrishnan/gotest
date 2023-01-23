@@ -51,3 +51,42 @@ func main() {
 	fmt.Println(dist)
 
 }
+
+// Hamming with Go Routine
+
+// package main
+
+// import (
+// 	"fmt"
+// 	"sync"
+// )
+
+// func hammingWords(word1, word2 string) (int, error) {
+
+// 	if len(word1) != len(word2) {
+// 		return 0, fmt.Errorf("Error len %d != len %d", len(word1), len(word2))
+// 	}
+// 	distance := 0
+// 	for v := range word1 {
+// 		if word1[v] != word2[v] {
+// 			distance++
+// 		}
+
+// 	}
+// 	return distance, nil
+// }
+
+// func main() {
+// 	var mu sync.WaitGroup
+// 	mu.Add(1)
+// 	go func() {
+// 		defer mu.Done()
+// 		callstat, err := hammingWords("hello", "Hello")
+// 		if err != nil {
+// 			panic(err)
+// 		}
+// 		fmt.Println(callstat)
+// 	}()
+// 	mu.Wait()
+
+// }
